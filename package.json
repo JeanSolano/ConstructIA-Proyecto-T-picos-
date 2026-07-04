@@ -1,0 +1,16 @@
+{
+  "name": "construct-ia",
+  "version": "1.0.0",
+  "description": "Estimador de costos de construccion en Panama asistido por IA (Gemini).",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n \"API,WEB\" -c \"blue,green\" \"npm --prefix server start\" \"npm --prefix client run dev\"",
+    "start:server": "npm --prefix server start",
+    "start:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

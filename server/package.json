@@ -1,0 +1,17 @@
+{
+  "name": "construct-ia-server",
+  "version": "1.0.0",
+  "description": "Backend de Construct-IA: proxy seguro a Gemini para estimacion de costos de construccion en Panama.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
