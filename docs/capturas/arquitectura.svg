@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="'Poppins','Segoe UI',sans-serif">
+  <!-- Fondo -->
+  <rect width="1280" height="720" fill="#f8fafc"/>
+
+  <!-- Titulo -->
+  <text x="64" y="72" font-size="38" font-weight="700" fill="#1e3a5f">Arquitectura de Construct-IA</text>
+  <text x="64" y="108" font-size="20" fill="#475569">Cliente–servidor de dos capas · Backend como proxy seguro a la IA</text>
+  <line x1="64" y1="130" x2="1216" y2="130" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Definiciones de flecha -->
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L10,6 L0,12 Z" fill="#274b76"/>
+    </marker>
+    <marker id="arrowG" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L10,6 L0,12 Z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Capa Cliente ===== -->
+  <rect x="64" y="200" width="340" height="360" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="64" y="200" width="340" height="52" rx="16" fill="#1e3a5f"/>
+  <rect x="64" y="236" width="340" height="16" fill="#1e3a5f"/>
+  <text x="234" y="234" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">Capa de Presentación</text>
+
+  <text x="94" y="292" font-size="19" font-weight="600" fill="#0f172a">Frontend · React SPA</text>
+  <text x="94" y="322" font-size="16" fill="#475569">React 18 + Vite + Tailwind</text>
+
+  <g font-size="15" fill="#0f172a">
+    <rect x="94" y="342" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="112" cy="359" r="4" fill="#059669"/>
+    <text x="128" y="364">Chatbot conversacional</text>
+    <rect x="94" y="384" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="112" cy="401" r="4" fill="#059669"/>
+    <text x="128" y="406">Desglose y comparador</text>
+    <rect x="94" y="426" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="112" cy="443" r="4" fill="#059669"/>
+    <text x="128" y="448">Generación de PDF (jsPDF)</text>
+  </g>
+
+  <!-- localStorage -->
+  <rect x="94" y="474" width="280" height="60" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="110" y="500" font-size="15" font-weight="600" fill="#047857">localStorage</text>
+  <text x="110" y="522" font-size="13" fill="#059669">Historial de proyectos (sin login/DB)</text>
+
+  <!-- ===== Capa Servidor ===== -->
+  <rect x="470" y="200" width="340" height="360" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="470" y="200" width="340" height="52" rx="16" fill="#1e3a5f"/>
+  <rect x="470" y="236" width="340" height="16" fill="#1e3a5f"/>
+  <text x="640" y="234" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">Capa de Lógica de Negocio</text>
+
+  <text x="500" y="292" font-size="19" font-weight="600" fill="#0f172a">Backend · Node.js + Express</text>
+  <text x="500" y="322" font-size="16" fill="#475569">Proxy seguro · la API key no sale del servidor</text>
+
+  <g font-size="15" fill="#0f172a">
+    <rect x="500" y="342" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="518" cy="359" r="4" fill="#2563eb"/>
+    <text x="534" y="364">Construcción de prompts</text>
+    <rect x="500" y="384" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="518" cy="401" r="4" fill="#2563eb"/>
+    <text x="534" y="406">Cliente de Gemini (@google/genai)</text>
+    <rect x="500" y="426" width="280" height="34" rx="8" fill="#f1f5f9"/>
+    <circle cx="518" cy="443" r="4" fill="#2563eb"/>
+    <text x="534" y="448">Validación de datos</text>
+  </g>
+
+  <g font-size="14" fill="#475569">
+    <text x="500" y="500" font-weight="600" fill="#1e3a5f">Endpoints REST</text>
+    <text x="500" y="524">POST /api/chat · POST /api/estimate</text>
+  </g>
+
+  <!-- ===== Servicio IA ===== -->
+  <rect x="876" y="300" width="340" height="160" rx="16" fill="#1e3a5f"/>
+  <text x="1046" y="352" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">Servicio Externo de IA</text>
+  <text x="1046" y="388" font-size="18" fill="#dbeafe" text-anchor="middle">Google Gemini</text>
+  <rect x="946" y="404" width="200" height="36" rx="18" fill="#059669"/>
+  <text x="1046" y="428" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">gemini-2.5-flash</text>
+
+  <!-- ===== Flechas ===== -->
+  <!-- Cliente <-> Servidor -->
+  <line x1="404" y1="360" x2="466" y2="360" stroke="#274b76" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="470" y1="400" x2="408" y2="400" stroke="#274b76" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="437" y="345" font-size="12" fill="#475569" text-anchor="middle">REST</text>
+  <text x="437" y="418" font-size="12" fill="#475569" text-anchor="middle">JSON</text>
+
+  <!-- Servidor <-> Gemini -->
+  <line x1="810" y1="372" x2="872" y2="372" stroke="#059669" stroke-width="3" marker-end="url(#arrowG)"/>
+  <line x1="876" y1="410" x2="814" y2="410" stroke="#059669" stroke-width="3" marker-end="url(#arrowG)"/>
+  <text x="843" y="357" font-size="12" fill="#059669" text-anchor="middle">HTTPS</text>
+  <text x="843" y="428" font-size="12" fill="#059669" text-anchor="middle">JSON</text>
+
+  <!-- Pie -->
+  <text x="64" y="612" font-size="15" fill="#475569">Flujo: el usuario conversa (chat/foto) → el backend arma el prompt y consulta a Gemini → devuelve un estimado</text>
+  <text x="64" y="636" font-size="15" fill="#475569">estructurado en JSON → el frontend muestra el desglose, el comparador y permite descargar el PDF.</text>
+
+  <text x="64" y="688" font-size="13" fill="#94a3b8">Construct-IA · Universidad Tecnológica de Panamá</text>
+</svg>
