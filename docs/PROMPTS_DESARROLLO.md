@@ -16,7 +16,7 @@ Hay dos niveles de uso de IA en este proyecto:
 | Nivel | Herramienta | Propósito |
 |---|---|---|
 | **IA como asistente de desarrollo** | Claude (Claude Code) | Generar el código, el diseño, la documentación y las evidencias. |
-| **IA como funcionalidad del producto** | Google Gemini (`gemini-2.5-flash`) | Motor del chatbot y de la estimación de costos dentro de la app. |
+| **IA como funcionalidad del producto** | Google Gemini (`gemini-flash-latest`) | Motor del chatbot y de la estimación de costos dentro de la app. |
 
 ---
 
@@ -50,7 +50,7 @@ ALCANCE
 STACK OBLIGATORIO
 - Frontend: React 18 + Vite + Tailwind CSS + Axios + jsPDF.
 - Backend: Node.js + Express.
-- IA: Google Gemini (usar el modelo gemini-2.5-flash). NO usar Claude ni OpenAI
+- IA: Google Gemini (usar el modelo gemini-flash-latest). NO usar Claude ni OpenAI
   como motor del producto.
 - Control de versiones: Git + GitHub.
 

@@ -58,7 +58,7 @@ seguro** hacia Gemini para que la clave de API nunca se exponga en el navegador.
                                                                     ▼
                                                         ┌──────────────────────┐
                                                         │  Google Gemini API    │
-                                                        │  (gemini-2.5-flash)   │
+                                                        │  (gemini-flash-latest)   │
                                                         └──────────────────────┘
 ```
 
@@ -84,7 +84,7 @@ seguro** hacia Gemini para que la clave de API nunca se exponga en el navegador.
 - dotenv, cors
 
 **Inteligencia Artificial**
-- Google Gemini (`gemini-2.5-flash`) — motor de estimación y del chatbot.
+- Google Gemini (`gemini-flash-latest`) — motor de estimación y del chatbot.
 - Ingeniería de prompts especializada para el dominio de construcción en Panamá
   (ver [`server/src/prompts.js`](server/src/prompts.js)).
 
@@ -209,7 +209,7 @@ varias etapas del ciclo de desarrollo:
   cotización profesional.
 - Al ser una demo académica, el historial no se sincroniza entre dispositivos
   (vive en el navegador).
-- El modelo por defecto es `gemini-2.5-flash`; puede cambiarse con la variable
+- El modelo por defecto es `gemini-flash-latest`; puede cambiarse con la variable
   `GEMINI_MODEL` en `server/.env`.
 - La clave incluida en el repositorio es solo para la demostración del curso;
   en un entorno real debe mantenerse privada y fuera del control de versiones.

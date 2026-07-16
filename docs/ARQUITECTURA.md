@@ -26,7 +26,7 @@ flowchart LR
         API --> PROMPT --> GEM
     end
 
-    IA["Google Gemini API<br/>gemini-2.5-flash"]
+    IA["Google Gemini API<br/>gemini-flash-latest"]
 
     UI -- "POST /api/chat<br/>POST /api/estimate" --> API
     API -- "JSON" --> UI
@@ -87,7 +87,7 @@ sequenceDiagram
   robusta.
 
 ### Servicios externos
-- **Google Gemini** (`gemini-2.5-flash`) — procesamiento de lenguaje natural,
+- **Google Gemini** (`gemini-flash-latest`) — procesamiento de lenguaje natural,
   análisis de imágenes y generación del estimado.
 
 ---
